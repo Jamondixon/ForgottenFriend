@@ -4,29 +4,32 @@ import WelcomeScreen from "./screens/WelcomeScreen";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
+import HomeScreen from "./screens/HomeScreen";
+import EventsScreen from "./screens/EventsScreen";
+import LocateScreen from "./screens/LocateScreen";
 
-function HomeScreen() {
-  return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text>Home!</Text>
-    </View>
-  );
-}
+// function HomeScreen() {
+//   return (
+//     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+//       <Text>Home!</Text>
+//     </View>
+//   );
+// }
 
-function SettingsScreen() {
-  return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text>Events!</Text>
-    </View>
-  );
-}
-function LocateScreen() {
-  return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text>Locate!</Text>
-    </View>
-  );
-}
+// function SettingsScreen() {
+//   return (
+//     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+//       <Text>Events!</Text>
+//     </View>
+//   );
+// }
+// function LocateScreen() {
+//   return (
+//     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+//       <Text>Locate!</Text>
+//     </View>
+//   );
+// }
 
 const Tab = createBottomTabNavigator();
 export default function App() {
@@ -74,7 +77,7 @@ export default function App() {
         />
         <Tab.Screen
           name="Events"
-          component={SettingsScreen}
+          component={EventsScreen}
           options={{
             tabBarIcon: ({ color, size }) => (
               <MaterialCommunityIcons

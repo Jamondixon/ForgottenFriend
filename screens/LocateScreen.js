@@ -1,11 +1,11 @@
 import React from "react";
 import { View, Text, StyleSheet, ImageBackground } from "react-native";
 
-export default function EventsScreen() {
+export default function LocateScreen() {
   return (
     <ImageBackground
       style={styles.background}
-      source={require("../assets/wood5.jpeg")}
+      source={require("../assets/wood3.jpeg")}
     >
       <View>
         <Text></Text>
