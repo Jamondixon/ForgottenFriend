@@ -1,37 +1,16 @@
-import React from "react";
-import { StyleSheet, Text, View } from "react-native";
-import WelcomeScreen from "./screens/WelcomeScreen";
-import { NavigationContainer } from "@react-navigation/native";
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
-import HomeScreen from "./screens/HomeScreen";
-import EventsScreen from "./screens/EventsScreen";
-import LocateScreen from "./screens/LocateScreen";
+import React from "react"
+import { StyleSheet, Text, View } from "react-native"
+import WelcomeScreen from "./screens/WelcomeScreen"
+import { NavigationContainer } from "@react-navigation/native"
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs"
+import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons"
+import HomeScreen from "./screens/HomeScreen"
+import EventsScreen from "./screens/EventsScreen"
+import LocateScreen from "./screens/LocateScreen"
+import LocateScreen2 from "./screens/LocateScreen2"
+// import LocateScreen3 from "./screens/LocateScreen3"
 
-// function HomeScreen() {
-//   return (
-//     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-//       <Text>Home!</Text>
-//     </View>
-//   );
-// }
-
-// function SettingsScreen() {
-//   return (
-//     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-//       <Text>Events!</Text>
-//     </View>
-//   );
-// }
-// function LocateScreen() {
-//   return (
-//     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-//       <Text>Locate!</Text>
-//     </View>
-//   );
-// }
-
-const Tab = createBottomTabNavigator();
+const Tab = createBottomTabNavigator()
 export default function App() {
   return (
     <NavigationContainer>
@@ -90,7 +69,7 @@ export default function App() {
         />
         <Tab.Screen
           name="Locate"
-          component={LocateScreen}
+          component={LocateScreen2}
           options={{
             tabBarIcon: ({ color, size }) => (
               <MaterialCommunityIcons
@@ -103,11 +82,11 @@ export default function App() {
         />
       </Tab.Navigator>
     </NavigationContainer>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
-});
+})

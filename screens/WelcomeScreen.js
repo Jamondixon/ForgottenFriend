@@ -2,6 +2,7 @@ import "react-native-gesture-handler";
 import React, { useState } from "react";
 import { Image, Text, ImageBackground, StyleSheet, View } from "react-native";
 import LoginForm from "./LoginForm";
+import FadeInView from "./FadeInView";
 
 function WelcomeScreen(props) {
   const [user, setUser] = useState({});
@@ -14,14 +15,16 @@ function WelcomeScreen(props) {
       <View style={styles.logoContainer}>
         <Image style={styles.logo} source={require("../assets/ff6.png")} />
       </View>
-      <View style={styles.container}>
-        {user.username ? (
-          <Text style={styles.text}>Welcome {user.username}!</Text>
-        ) : (
-          <Text style={styles.text}>Please Sign In</Text>
-        )}
-        <LoginForm setUser={setUser} />
-      </View>
+      <FadeInView>
+        <View style={styles.container}>
+          {user.username ? (
+            <Text style={styles.text}>Welcome {user.username}!</Text>
+          ) : (
+            <Text style={styles.text}>Please Sign In</Text>
+          )}
+          <LoginForm setUser={setUser} />
+        </View>
+      </FadeInView>
     </ImageBackground>
   );
 }
