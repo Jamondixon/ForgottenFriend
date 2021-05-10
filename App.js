@@ -16,9 +16,9 @@ export default function App() {
     <NavigationContainer>
       <Tab.Navigator
         tabBarOptions={{
-          activeTintColor: "honeydew",
+          activeTintColor: "darkseagreen",
           inactiveTintColor: "darkseagreen",
-          activeBackgroundColor: "darkseagreen",
+          activeBackgroundColor: "lightcyan",
           inactiveBackgroundColor: "honeydew",
           labelStyle: {
             fontSize: 15,

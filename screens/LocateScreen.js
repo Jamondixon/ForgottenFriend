@@ -13,19 +13,6 @@ import CommentForm from "./CommentForm"
 export default function LocateScreen(props) {
   const [user, setUser] = useState({})
 
-  //   const showComments = () =>
-  //     user.items.map((comment, i) => {
-  //       console.log(comment);
-  //       return (
-  //         <View style={styles.savedCommentsContainer}>
-  //           <Text>
-  //             {user.name}
-  //             {user.comment}
-  //           </Text>
-  //         </View>
-  //       );
-  //     });
-
   return (
     <ImageBackground
       style={styles.background}

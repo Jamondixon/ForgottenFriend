@@ -31,7 +31,7 @@ export default function LoginForm(props) {
       />
       <Button
         style={styles.submitButton}
-        title="Submit"
+        title="Log In"
         onPress={handleSubmit}
       />
       <Button
@@ -54,16 +54,17 @@ const styles = StyleSheet.create({
     borderRadius: 40 / 2,
     marginTop: 10,
     padding: 10,
-    backgroundColor: "honeydew",
+    backgroundColor: "ivory",
     fontFamily: "Futura-MediumItalic",
   },
   submitButton: {
-    width: 140,
+    width: 120,
     alignSelf: "center",
     padding: 4,
+    color: `#f28482`,
   },
   registerButton: {
-    width: 140,
+    width: 120,
     alignSelf: "center",
     padding: 4,
   },

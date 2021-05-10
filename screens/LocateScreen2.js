@@ -15,6 +15,7 @@ export default class LocateScreen2 extends React.Component {
     this.state = {
       isLoading: true,
       dataSource: null,
+      comments: [],
     }
   }
 
@@ -89,13 +90,13 @@ const styles = StyleSheet.create({
   },
   locateHeading: {
     textAlign: "center",
-    top: 40,
+    top: 30,
     fontFamily: "Futura-Medium",
-    fontSize: 20,
+    fontSize: 25,
     fontWeight: "900",
     color: "mintcream",
     textShadowColor: "black",
-    textShadowRadius: 2,
+    textShadowRadius: 3,
   },
   remarks: {
     left: 10,

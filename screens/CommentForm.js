@@ -8,9 +8,8 @@ export default function CommentForm(props) {
 
   const handleSubmit = (event) => {
     event.preventDefault()
-    props.setUser({
-      email,
-      comment,
+    this.setState({
+      input: event.target.value,
     })
   }
   return (
@@ -43,12 +42,12 @@ const styles = StyleSheet.create({
     borderRadius: 40 / 2,
     marginTop: 10,
     padding: 10,
-    backgroundColor: "honeydew",
+    backgroundColor: "ivory",
     fontFamily: "Futura-MediumItalic",
     borderColor: "mediumturquoise",
   },
   button: {
-    width: 180,
+    width: 140,
     alignSelf: "center",
     padding: 4,
   },

@@ -1,11 +1,11 @@
-import "react-native-gesture-handler";
-import React, { useState } from "react";
-import { Image, Text, ImageBackground, StyleSheet, View } from "react-native";
-import LoginForm from "./LoginForm";
-import FadeInView from "./FadeInView";
+import "react-native-gesture-handler"
+import React, { useState } from "react"
+import { Image, Text, ImageBackground, StyleSheet, View } from "react-native"
+import LoginForm from "./LoginForm"
+import FadeInView from "./FadeInView"
 
 function WelcomeScreen(props) {
-  const [user, setUser] = useState({});
+  const [user, setUser] = useState({})
 
   return (
     <ImageBackground
@@ -26,7 +26,7 @@ function WelcomeScreen(props) {
         </View>
       </FadeInView>
     </ImageBackground>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
@@ -54,8 +54,8 @@ const styles = StyleSheet.create({
   },
   text: {
     fontFamily: "Futura-MediumItalic",
-    color: "mintcream",
+    color: "dodgerblue",
     fontSize: 20,
   },
-});
-export default WelcomeScreen;
+})
+export default WelcomeScreen
