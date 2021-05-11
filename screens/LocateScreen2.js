@@ -52,9 +52,9 @@ export default class LocateScreen2 extends React.Component {
       return (
         <ImageBackground
           style={styles.background}
-          source={require("../assets/wood3.jpeg")}
+          source={require("../assets/bg_brown.jpeg")}
         >
-          <Text style={styles.locateHeading}>Locate Item!</Text>
+          <Text style={styles.locateHeading}>Locate Item</Text>
           <ScrollView style={styles.container}>{comments}</ScrollView>
           <CommentForm></CommentForm>
         </ImageBackground>
@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
     flex: 1,
     height: 350,
     width: 300,
-    backgroundColor: "honeydew",
+    backgroundColor: "ivory",
     marginTop: 50,
     borderRadius: 50,
     alignSelf: "center",
@@ -92,11 +92,11 @@ const styles = StyleSheet.create({
     textAlign: "center",
     top: 30,
     fontFamily: "Futura-Medium",
-    fontSize: 25,
+    fontSize: 30,
     fontWeight: "900",
-    color: "mintcream",
+    color: "ivory",
+    textShadowRadius: 100,
     textShadowColor: "black",
-    textShadowRadius: 3,
   },
   remarks: {
     left: 10,

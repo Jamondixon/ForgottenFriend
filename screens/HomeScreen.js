@@ -66,7 +66,7 @@ export default function HomeScreen() {
         <View style={styles.itemImageContainer}>
           <Text style={styles.itemName}>{item.name}</Text>
           <Image
-            key={i}
+            key={i.id}
             style={styles.itemImage}
             source={{ uri: item.image }}
           />
@@ -131,8 +131,8 @@ const styles = StyleSheet.create({
   rowHeading: {
     flex: 1,
     marginLeft: 45,
-    color: "darkseagreen",
-    fontSize: 20,
+    color: "ivory",
+    fontSize: 23,
     marginTop: 100,
     fontWeight: "700",
   },
@@ -143,7 +143,7 @@ const styles = StyleSheet.create({
   button: {
     width: 70,
     marginRight: 65,
-    backgroundColor: "darkseagreen",
+    backgroundColor: "ivory",
     padding: 8,
     borderRadius: 40,
   },
@@ -168,7 +168,7 @@ const styles = StyleSheet.create({
   popUpInfoContainer: {
     height: 100,
     width: 240,
-    backgroundColor: "honeydew",
+    backgroundColor: "lightcyan",
     position: "absolute",
     borderRadius: 30,
     alignSelf: "center",
@@ -210,5 +210,6 @@ const styles = StyleSheet.create({
     fontFamily: "Futura-Medium",
     left: 6,
     paddingBottom: 3,
+    fontWeight: "700",
   },
 })

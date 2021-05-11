@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { View, Text, TextInput, StyleSheet } from "react-native"
+import { View, Text, TextInput, StyleSheet, Form } from "react-native"
 import { Button } from "react-native-elements"
 
 export default function CommentForm(props) {
@@ -9,7 +9,8 @@ export default function CommentForm(props) {
   const handleSubmit = (event) => {
     event.preventDefault()
     this.setState({
-      input: event.target.value,
+      email: [],
+      comment: [],
     })
   }
   return (
@@ -26,7 +27,7 @@ export default function CommentForm(props) {
         placeholder="comment"
         value={comment}
       />
-      <Button style={styles.button} title="Submit" onPress={handleSubmit} />
+      <Button style={styles.button} title="Submit" />
     </View>
   )
 }
@@ -42,13 +43,14 @@ const styles = StyleSheet.create({
     borderRadius: 40 / 2,
     marginTop: 10,
     padding: 10,
-    backgroundColor: "ivory",
+    backgroundColor: "lightcyan",
     fontFamily: "Futura-MediumItalic",
     borderColor: "mediumturquoise",
   },
   button: {
-    width: 140,
+    width: 120,
     alignSelf: "center",
     padding: 4,
+    paddingTop: 10,
   },
 })

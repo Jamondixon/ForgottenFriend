@@ -13,7 +13,7 @@ function WelcomeScreen(props) {
       source={require("../assets/bg_brown.jpeg")}
     >
       <View style={styles.logoContainer}>
-        <Image style={styles.logo} source={require("../assets/ff6.png")} />
+        <Image style={styles.logo} source={require("../assets/NewFF.png")} />
       </View>
       <FadeInView>
         <View style={styles.container}>
@@ -54,8 +54,10 @@ const styles = StyleSheet.create({
   },
   text: {
     fontFamily: "Futura-MediumItalic",
-    color: "dodgerblue",
-    fontSize: 20,
+    color: "ivory",
+    fontSize: 25,
+    fontWeight: "900",
+    paddingBottom: 10,
   },
 })
 export default WelcomeScreen

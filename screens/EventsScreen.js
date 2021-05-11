@@ -59,7 +59,7 @@ export default class EventsScreen extends React.Component {
       return (
         <ImageBackground
           style={styles.background}
-          source={require("../assets/wood5.jpeg")}
+          source={require("../assets/bg_brown.jpeg")}
         >
           <Text style={styles.heading}>Events</Text>
           <View style={styles.eventsContainer}>
@@ -81,16 +81,17 @@ const styles = StyleSheet.create({
     fontFamily: "Futura-Medium",
     fontSize: 30,
     fontWeight: "900",
-    color: "darkseagreen",
+    color: "ivory",
     textShadowColor: "black",
     textShadowRadius: 2,
   },
   eventsContainer: {
     flex: 1,
-    height: 350,
+    height: 330,
     width: 300,
-    backgroundColor: "lightcyan",
+    backgroundColor: "ivory",
     marginTop: 40,
+    marginBottom: 20,
     borderRadius: 40,
     alignSelf: "center",
     padding: 35,
@@ -102,6 +103,7 @@ const styles = StyleSheet.create({
     padding: 5,
     borderStyle: "solid",
     borderColor: "black",
+    borderRadius: 20,
   },
   // imageContainer: {
   //   padding: 20,
@@ -113,13 +115,13 @@ const styles = StyleSheet.create({
     height: 200,
   },
   name: {
-    color: "white",
+    color: "lightcyan",
     fontSize: 20,
     position: "absolute",
-
     textAlign: "center",
     padding: 5,
     alignSelf: "center",
+    fontWeight: "600",
   },
   location: {
     textAlign: "center",

@@ -54,18 +54,19 @@ const styles = StyleSheet.create({
     borderRadius: 40 / 2,
     marginTop: 10,
     padding: 10,
-    backgroundColor: "ivory",
+    backgroundColor: "lightcyan",
     fontFamily: "Futura-MediumItalic",
   },
   submitButton: {
     width: 120,
     alignSelf: "center",
     padding: 4,
-    color: `#f28482`,
+    paddingTop: 10,
   },
   registerButton: {
     width: 120,
     alignSelf: "center",
     padding: 4,
+    marginBottom: 40,
   },
 })
