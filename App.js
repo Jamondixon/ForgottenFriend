@@ -6,11 +6,12 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs"
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons"
 import HomeScreen from "./screens/HomeScreen"
 import EventsScreen from "./screens/EventsScreen"
-import LocateScreen from "./screens/LocateScreen"
 import LocateScreen2 from "./screens/LocateScreen2"
-// import LocateScreen3 from "./screens/LocateScreen3"
+
+
 
 const Tab = createBottomTabNavigator()
+
 export default function App() {
   return (
     <NavigationContainer>

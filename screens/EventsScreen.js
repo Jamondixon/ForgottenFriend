@@ -11,6 +11,7 @@ import {
   TouchableOpacity,
 } from "react-native"
 
+
 export default class EventsScreen extends React.Component {
   constructor(props) {
     super(props)
@@ -34,6 +35,10 @@ export default class EventsScreen extends React.Component {
       })
   }
 
+  openAlert=()=>{
+    alert('Success!');
+  }
+
   render() {
     if (this.state.isLoading) {
       return (
@@ -45,7 +50,7 @@ export default class EventsScreen extends React.Component {
       let events = this.state.dataSource.map((val, key) => {
         return (
           <View style={styles.imageContainer}>
-            <TouchableOpacity style={styles.itemContainer}>
+            <TouchableOpacity  onPress={this.openAlert}style={styles.itemContainer}>
               <ImageBackground
                 source={{ uri: val.image }}
                 style={styles.image}
@@ -59,7 +64,7 @@ export default class EventsScreen extends React.Component {
       return (
         <ImageBackground
           style={styles.background}
-          source={require("../assets/bg_brown.jpeg")}
+          source={require("../assets/bluegold.jpg")}
         >
           <Text style={styles.heading}>Events</Text>
           <View style={styles.eventsContainer}>
@@ -78,12 +83,10 @@ const styles = StyleSheet.create({
   heading: {
     textAlign: "center",
     top: 30,
-    fontFamily: "Futura-Medium",
+    fontFamily: "Georgia",
     fontSize: 30,
     fontWeight: "900",
-    color: "ivory",
-    textShadowColor: "black",
-    textShadowRadius: 2,
+    color: "lightcyan",
   },
   eventsContainer: {
     flex: 1,
@@ -95,6 +98,7 @@ const styles = StyleSheet.create({
     borderRadius: 40,
     alignSelf: "center",
     padding: 35,
+    
   },
   itemContainer: {
     flex: 1,
@@ -104,11 +108,8 @@ const styles = StyleSheet.create({
     borderStyle: "solid",
     borderColor: "black",
     borderRadius: 20,
+    marginVertical: 20
   },
-  // imageContainer: {
-  //   padding: 20,
-  //   margin: 20,
-  // },
   image: {
     flex: 1,
     width: 220,
@@ -122,6 +123,7 @@ const styles = StyleSheet.create({
     padding: 5,
     alignSelf: "center",
     fontWeight: "600",
+    fontFamily: "Georgia",
   },
   location: {
     textAlign: "center",

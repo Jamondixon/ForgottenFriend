@@ -90,7 +90,7 @@ export default function HomeScreen() {
       </View>
       <ScrollView style={styles.itemContainer}>
         <View style={styles.flexRow}>
-          <Text style={styles.rowHeading}> My Items</Text>
+          <Text style={styles.rowHeading}>Offered Items</Text>
           <View style={styles.buttonContainer}>
             <TouchableOpacity style={styles.button}>
               <Text>View All</Text>
@@ -130,7 +130,7 @@ const styles = StyleSheet.create({
   },
   rowHeading: {
     flex: 1,
-    marginLeft: 45,
+    marginLeft: 25,
     color: "ivory",
     fontSize: 23,
     marginTop: 100,
@@ -212,4 +212,5 @@ const styles = StyleSheet.create({
     paddingBottom: 3,
     fontWeight: "700",
   },
+  
 })

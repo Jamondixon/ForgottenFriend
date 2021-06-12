@@ -21,6 +21,7 @@ export default function LoginForm(props) {
         style={styles.formInput}
         placeholder="username"
         value={username}
+        clearButtonMode='always'
       />
       <TextInput
         onChangeText={(text) => setPassword(text)}
@@ -28,6 +29,7 @@ export default function LoginForm(props) {
         placeholder="password"
         value={password}
         secureTextEntry={true}
+        clearButtonMode='always'
       />
       <Button
         style={styles.submitButton}

@@ -10,7 +10,7 @@ function WelcomeScreen(props) {
   return (
     <ImageBackground
       style={styles.background}
-      source={require("../assets/bg_brown.jpeg")}
+      source={require("../assets/bluegold.jpg")}
     >
       <View style={styles.logoContainer}>
         <Image style={styles.logo} source={require("../assets/NewFF.png")} />

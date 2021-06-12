@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { View, Text, TextInput, StyleSheet, Form } from "react-native"
+import { View, Text, TextInput, StyleSheet, Form, Alert } from "react-native"
 import { Button } from "react-native-elements"
 
 export default function CommentForm(props) {
@@ -7,12 +7,17 @@ export default function CommentForm(props) {
   const [comment, setComment] = useState("")
 
   const handleSubmit = (event) => {
-    event.preventDefault()
+    event.target.reset()
     this.setState({
       email: [],
       comment: [],
     })
   }
+
+  openAlert = () =>{
+    alert('Comment added!');
+  }
+ 
   return (
     <View style={styles.form}>
       <TextInput
@@ -20,14 +25,16 @@ export default function CommentForm(props) {
         style={styles.formInput}
         placeholder="email"
         value={email}
+        clearButtonMode='always'
       />
       <TextInput
         onChangeText={(text) => setComment(text)}
         style={styles.formInput}
         placeholder="comment"
         value={comment}
+        clearButtonMode='always'
       />
-      <Button style={styles.button} title="Submit" />
+      <Button style={styles.button} title="Submit"  />
     </View>
   )
 }
