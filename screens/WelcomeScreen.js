@@ -46,7 +46,6 @@ const styles = StyleSheet.create({
   },
   container: {
     height: 210,
-    // backgroundColor: "mintcream",
     alignItems: "center",
     justifyContent: "center",
     borderRadius: 40 / 2,
