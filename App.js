@@ -1,5 +1,5 @@
 import React from "react"
-import { StyleSheet, Text, View } from "react-native"
+import { StyleSheet } from "react-native"
 import WelcomeScreen from "./screens/WelcomeScreen"
 import { NavigationContainer } from "@react-navigation/native"
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs"
@@ -7,8 +7,6 @@ import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityI
 import HomeScreen from "./screens/HomeScreen"
 import EventsScreen from "./screens/EventsScreen"
 import LocateScreen2 from "./screens/LocateScreen2"
-
-
 
 const Tab = createBottomTabNavigator()
 
