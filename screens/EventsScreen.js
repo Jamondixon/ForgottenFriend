@@ -5,8 +5,6 @@ import {
   StyleSheet,
   ImageBackground,
   ActivityIndicator,
-  Image,
-  Card,
   ScrollView,
   TouchableOpacity,
 } from "react-native"
