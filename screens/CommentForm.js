@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { View, Text, TextInput, StyleSheet, Form, Alert } from "react-native"
+import { View, TextInput, StyleSheet, Form, Alert } from "react-native"
 import { Button } from "react-native-elements"
 
 export default function CommentForm(props) {
